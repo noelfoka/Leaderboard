@@ -1,1 +1,4 @@
-const h1 = document.getElementById('h1');
+import addNew from './modules/add.js';
+import './style.css';
+
+addNew();

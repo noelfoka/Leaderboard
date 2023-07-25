@@ -70,3 +70,27 @@ input[type=text] {
   align-self: flex-end;
   margin-right: 4.5em;
 }
+
+.allscores {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.scoreItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -2.51em;
+  width: 20em;
+  height: 100%;
+  height: 2.1em;
+}
+
+.scoreItem:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.scoreItem p {
+  margin-left: 1em;
+}
