@@ -4,9 +4,29 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Leaderboard</title>
-        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <h1 id="h1" class="h1">Leaderboard</h1>
+        <h1>Leaderboard</h1>
+
+        <main class="main">
+            <div class="scores">
+                <div class="title">
+                    <h2>Recent Scores</h2>
+                    <button type="button">Refresh</button>
+                </div>
+
+                <div class="results">
+
+                </div>
+            </div>
+
+            <div class="form">
+                <h2>Add your scores</h2>
+                <input type="text" placeholder="Your name" id="name" required>
+                <input type="text" placeholder="Your scores" id="score" required>
+                <button type="button" id="scoreBtn">Submit</button>
+            </div>
+        </main>
     </body>
 </html>
