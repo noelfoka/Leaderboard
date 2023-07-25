@@ -1,1 +1,1 @@
-const h1 = document.getElementById("h1");
+const h1 = document.getElementById('h1');
