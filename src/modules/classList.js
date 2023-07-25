@@ -5,7 +5,7 @@ export default class ScoresList {
 
   saveScore() {
     const sco = JSON.stringify(this.allscores);
-    localStorage.setItem("scores", sco);
+    localStorage.setItem('scores', sco);
   }
 
   addscore(names, scorevalue) {
@@ -15,6 +15,6 @@ export default class ScoresList {
   }
 
   getStoredscore() {
-    this.allscores = JSON.parse(localStorage.getItem("scores"));
+    this.allscores = JSON.parse(localStorage.getItem('scores'));
   }
 }
