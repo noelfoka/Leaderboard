@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Leaderboard</title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <h1>Leaderboard</h1>
-
-        <main class="main">
-            <div class="scores">
-                <div class="title">
-                    <h2>Recent Scores</h2>
-                    <button type="button">Refresh</button>
-                </div>
-
-                <div class="results">
-
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+</head>
+<body>
+    <h1>Leaderboard</h1>
+    <div class="main">
+        <div class="scores">
+            <div class="title">
+                <h2>Recent scores</h2>
+                <button type="button" id="refresh">Refresh</button>
             </div>
+            <div class="results">
 
-            <div class="form">
-                <h2>Add your scores</h2>
-                <input type="text" placeholder="Your name" id="name" required>
-                <input type="text" placeholder="Your scores" id="score" required>
-                <button type="button" id="scoreBtn">Submit</button>
             </div>
-        </main>
-    </body>
+        </div>
+        <div class="form">
+            <h2>Add your scoore</h2>
+            <input type="text" placeholder="Your name" id="name" required>
+            <input type="text" placeholder="Your score" id="score" required>
+            <button type="button" id="scoreBtn">Submit</button>
+        </div>
+    </div>
+</body>
 </html>
