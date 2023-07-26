@@ -3,7 +3,9 @@ import ScoresList from './classlist.js';
 export const score = new ScoresList();
 
 const createScore = async () => {
-  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/odai/scores');
+  const response = await fetch(
+    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/odai/scores',
+  );
   const data = await response.json();
   const { length } = data.result;
   const listSection = document.querySelector('.results');
