@@ -39,6 +39,7 @@ h1 {
   padding: 0.2em 0.7em;
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .title h2 {
@@ -62,6 +63,7 @@ input[type=text] {
   margin-bottom: 1em;
   box-shadow: 2px 2px 2px black;
   font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
 }
 
 .form button {
