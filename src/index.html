@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaderboard</title>
-</head>
-<body>
-    <h1>Leaderboard</h1>
-    <div class="main">
-        <div class="scores">
-            <div class="title">
-                <h2>Recent scores</h2>
-                <button type="button" id="refresh">Refresh</button>
-            </div>
-            <div class="results">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Leaderboard</title>
+    </head>
+    <body>
+        <h1>Leaderboard</h1>
+        <div class="main">
+            <div class="scores">
+                <div class="results">
+                    <div class="title">
+                        <h2>Recent scores</h2>
+                        <button type="button" id="refresh">Refresh</button>
+                    </div>
+                    <table class="table">
+                        <tr class="first">
+                            <th>Name</th>
+                            <th>Score</th>
+                        </tr>
+                        <div class="container">
+                        </div>
+                    </table>
+                </div>
 
             </div>
+            <div class="form">
+                <div class="h2-form">
+                    <h2>Add your scoore</h2>
+                </div>
+                <input type="text" placeholder="Your name" id="name" required>
+                <span></span>
+                <input type="number" placeholder="Your score" id="score"
+                    required>
+                <span></span>
+                <button type="button" id="scoreBtn">Submit</button>
+            </div>
         </div>
-        <div class="form">
-            <h2>Add your scoore</h2>
-            <input type="text" placeholder="Your name" id="name" required>
-            <input type="text" placeholder="Your score" id="score" required>
-            <button type="button" id="scoreBtn">Submit</button>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
