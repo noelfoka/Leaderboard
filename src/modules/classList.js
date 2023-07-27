@@ -1,20 +1,17 @@
 export default class ScoresList {
-  constructor() {
-    this.allscores = [];
-  }
-
-  saveScore() {
-    const sco = JSON.stringify(this.allscores);
-    localStorage.setItem('scores', sco);
-  }
-
-  addscore(names, scorevalue) {
-    const scoreArr = { names, scorevalue };
-    this.allscores.push(scoreArr);
-    this.saveScore();
-  }
-
-  getStoredscore() {
-    this.allscores = JSON.parse(localStorage.getItem('scores'));
+  async addscore(names, scorevalue) {
+    this.a = 'hi';
+    fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/odai/scores', {
+      method: 'POST',
+      body: JSON.stringify({
+        user: names,
+        score: scorevalue,
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    });
+    await ((response) => response.json());
+    await ((error) => error('Error:', error));
   }
 }

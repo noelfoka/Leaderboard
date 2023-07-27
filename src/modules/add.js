@@ -2,19 +2,19 @@ import createScore, { score } from './display.js';
 
 const btn = document.getElementById('scoreBtn');
 
-const addNew = () => {
-  const newName = document.getElementById('name');
-  const newScore = document.getElementById('score');
-  const nameInput = newName.value;
-  const scoreInput = newScore.value;
-
+const Addnew = () => {
+  const newname = document.getElementById('name');
+  const newscore = document.getElementById('score');
+  const nameInput = newname.value;
+  const scoreInput = newscore.value;
   if (nameInput !== '' && scoreInput !== '') {
     score.addscore(nameInput, scoreInput);
     createScore();
-    newName.value = '';
-    newScore.value = '';
+    newname.value = '';
+    newscore.value = '';
   }
 };
 
-btn.addEventListener('click', addNew);
-export default addNew;
+btn.addEventListener('click', Addnew);
+
+export default Addnew;

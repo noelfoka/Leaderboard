@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  gap: 5rem;
+  gap: 5em;
 }
 
 h1 {
@@ -38,13 +38,13 @@ h1 {
   box-shadow: 2px 2px 2px black;
   padding: 0.2em 0.7em;
   font-family: 'Poppins', sans-serif;
+  cursor: pointer;
   border-radius: 5px;
 }
 
-.title h2,
-.form h2 {
+.title h2 {
   font-weight: 500;
-  font-size: 1.8em;
+  font-size: 1.7em;
 }
 
 .form {
@@ -62,8 +62,8 @@ input[type=text] {
   padding: 0.2em 0.7em;
   margin-bottom: 1em;
   box-shadow: 2px 2px 2px black;
-  border-radius: 5px;
   font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
 }
 
 .form button {
