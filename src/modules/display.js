@@ -1,4 +1,4 @@
-import ScoresList from './classlist.js';
+import ScoresList from './classList.js';
 
 export const score = new ScoresList();
 
